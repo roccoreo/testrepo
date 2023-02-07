@@ -4,11 +4,12 @@ name: Ansible App deploy
     inputs:
       App_Name:
         description: App Name
-        default: hive-v3
+        default: Please type here the application name
         required: true
       Image:
         type: choice
         description: Image-OS
+        default: Please choice the image ID below
         options:
           - debian11_apache2_4_mysql8_node16_php8_1
           - debian11_apache2_4_php8_1-drupal9_4_7
