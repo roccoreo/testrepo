@@ -9,10 +9,11 @@ name: Ansible App deploy
       Image:
         type: choice
         description: Image-OS
-        default: Please choice the image ID below
         options:
           - debian11_apache2_4_mysql8_node16_php8_1
           - debian11_apache2_4_php8_1-drupal9_4_7
+        required: true
+        default: Please choice the image ID below
           
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
