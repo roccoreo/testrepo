@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Print the Application Name
-      run: echo "Hello ${{ github.event.inputs.App_Name }}"
     - name: Print the Image tag
-      run: echo "Hello ${{ github.event.inputs.Image }}"
+      run: |
+         echo "Hello ${{ github.event.inputs.Image }}"
+         echo "Hello ${{ github.event.inputs.App_Name }}"
